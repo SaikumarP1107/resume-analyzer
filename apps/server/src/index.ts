@@ -1,3 +1,4 @@
+const functions = require('firebase-functions');
 import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
@@ -17,3 +18,5 @@ app.use('/score', scoreRouter);
 app.listen(PORT, () => {
   console.log(`API server running at http://localhost:${PORT}`);
 });
+
+exports.app = functions.https.onRequest(app);
