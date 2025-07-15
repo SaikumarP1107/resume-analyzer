@@ -22,7 +22,7 @@ function ResumeUpload() {
     setResult(null);
 
     try {
-      const res = await fetch('http://localhost:4000/score', {
+      const res = await fetch('https://api-toolkit.onrender.com/score', {
         method: 'POST',
         body: formData,
       });
