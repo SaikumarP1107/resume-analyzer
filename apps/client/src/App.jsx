@@ -13,11 +13,20 @@ function App() {
   };
 
   return (
-    <div className="max-w-3xl mx-auto p-6">
-      <h1 className="text-2xl font-bold mb-6">AI Resume Analyzer</h1>
-      <ResumeUpload onUploadSuccess={handleUploadSuccess} />
-      <SkillList skills={skills} />
-      <JobMatches jobs={jobs} />
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
+      <div className="max-w-4xl mx-auto p-6">
+        <div className="text-center mb-8">
+          <h1 className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2">
+            AI Resume Analyzer
+          </h1>
+          <p className="text-gray-600 text-lg">
+            Analyze your resume against job descriptions with AI-powered insights
+          </p>
+        </div>
+        <ResumeUpload onUploadSuccess={handleUploadSuccess} />
+        <SkillList skills={skills} />
+        <JobMatches jobs={jobs} />
+      </div>
     </div>
   );
 }

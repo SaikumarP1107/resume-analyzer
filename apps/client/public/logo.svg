@@ -1,0 +1,7 @@
+<svg width="320" height="100" viewBox="0 0 320 100" xmlns="http://www.w3.org/2000/svg">
+  <text x="10" y="60" font-family="Arial, sans-serif" font-size="32" font-weight="bold">
+    <tspan fill="#155e75">Smart</tspan><tspan fill="#7a7a7a">CV</tspan><tspan fill="#155e75">Scan</tspan>
+  </text>
+  <!-- Scan line under 'Scan' -->
+  <rect x="150" y="66" width="75" height="4" fill="#155e75" rx="2"/>
+</svg>
