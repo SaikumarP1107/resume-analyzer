@@ -27,7 +27,7 @@ function ResumeUpload({ onUploadSuccess }) {
         body: formData,
       });
 
-      if (!res.ok) throw new Error('Server error');
+      if (!res.ok) throw new Error('You exceeded your current quota, please try again later.');
 
       const data = await res.json();
       setResult(data);
